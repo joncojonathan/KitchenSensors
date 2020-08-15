@@ -1,6 +1,8 @@
 # KitchenSensors
 This repo contains scripts to obtain data from sensors connected to a Raspberry Pi Zero.  In my case these sensors are located in the kitchen to help detect leaks under the kitchen sink but you're welcome to use the script however you need.
 
+Note this script has not been tested with Python 2, only Python 3.
+
 ## Installing required components
 To use this script you'll need an Adafruit DHT11 or DHT22 sensor along the Paho MQTT client.  These can be installed by:
 
