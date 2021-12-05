@@ -68,7 +68,7 @@ else:
 if washingMachineHumidity is not None and washingMachineTemperature is not None:
     ret= client1.publish("kitchen/washing-machine/temperature","{0:0.1f}".format(washingMachineTemperature))
     ret= client1.publish("kitchen/washing-machine/humidity","{0:0.1f}".format(washingMachineHumidity))
-    f.write('{0},{1},Washing-Machine,{2:0.1f}*C,{3:0.1f}%\r\n'.format(time.strftime('%y-%m-%d'), time.strftime('%H:%M'), washingMachineTemperature, washignMachineHumidity))
+    f.write('{0},{1},Washing-Machine,{2:0.1f}*C,{3:0.1f}%\r\n'.format(time.strftime('%y-%m-%d'), time.strftime('%H:%M'), washingMachineTemperature, washingMachineHumidity))
 else:
     ret= client1.publish("kitchen/washing-machine/temperature","FAILED")
     print("Failed to retrieve data from washing-machine sensor")
